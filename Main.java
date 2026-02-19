@@ -1368,3 +1368,178 @@ public class Main{
 }
 */
 //------------------------------------------------------------------------------------------------------
+/*
+public class Main{
+    public static void main(String[] args){
+
+        //  METHODS
+
+        String name = "Patrick";
+        int age = 38;
+
+        happyBirthday(name, age);
+
+        double result = square(3);
+        System.out.println(result);
+
+        System.out.println(cube(3));
+
+        String fullName = getFullName("Spongebob", "Squarepants");
+        System.out.println(fullName);
+
+        int userAge = 21;
+
+        if(ageCheck(userAge)){
+            System.out.println("You may sign up!");
+        }
+        else{
+            System.out.println("You must be 18+ to sign up");
+        }
+    }
+    static void happyBirthday(String name, int age){
+        System.out.println("Happy Birthday to you!");
+        System.out.printf("Happy Birthday dear %s!\n", name);
+        System.out.printf("You are %d years old!\n", age);
+        System.out.println("Happy Birthday to you!\n");
+    }
+    static double square(double number){
+        return number * number;
+    }
+    static double cube(double number){
+        return number * number * number;
+    }
+    static String getFullName(String first, String last){
+        return first + " " + last;
+    }
+    static boolean ageCheck(int userAge){
+        if(userAge >= 18){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        String name = "Patrick";
+        int age = 21;
+
+        happyBirthday(name, age);
+        happyBirthday(name, age);
+        happyBirthday(name, age);
+    }
+    static void happyBirthday(String name, int age){
+        System.out.println("Happy Birthday to you!");
+        System.out.printf("Happy Birthday dear %s\n", name);
+        System.out.printf("You are %d years old!\n", age);
+        System.out.println("Happy Birthday to you!\n");
+
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        double result = square(3);
+        System.out.println(result);
+
+    }
+    static double square(double number){
+        return number * number;
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        System.out.println(cube(3));
+
+    }
+    static double cube(double number){
+        return number * number * number;
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        String fullName = getFullName("Spongebob", "Squarepants");
+        System.out.println(fullName);
+
+    }
+    static String getFullName(String first, String last){
+        return first + " " + last;
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        int userAge = 25;
+
+        if(ageCheck(userAge)){
+            System.out.println("You may sign up!");
+        }
+        else{
+            System.out.println("You must be18+ to sign up!");
+        }
+
+    }
+    static boolean ageCheck(int userAge){
+        if(userAge >= 18){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+*/
+//------------------------------------------------------------------------------
+/*
+public class Main{
+    public static void main(String[] args){
+
+        // overload methods = methods that share the same name,
+        //                    but different parameters
+        //                    signature = name + parameters
+
+        System.out.println(add(1,2,3,4));
+    }
+    static double add(double a, double b){
+        return a + b;
+    }static double add(double a, double b, double c){
+        return a + b + c;
+    }static double add(double a, double b, double c, double d){
+        return a + b + c + d;
+    }    
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        String pizza = bakePizza("flat bread", "mozzarella", "pepperoni");
+
+        System.out.println(pizza);
+    }
+    static String bakePizza(String bread){
+        return bread + " pizza";
+    }
+    static String bakePizza(String bread, String cheese){
+        return cheese + " " + bread + " pizza";
+    }
+    static String bakePizza(String bread, String cheese, String topping){
+        return topping + " " + cheese + " " + bread + " pizza";
+    }
+}
+*/
+//-----------------------------------------------------------------------------------

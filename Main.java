@@ -1592,7 +1592,7 @@ public class Main{
 }
 */
 //----------------------------------------------------------------------------------------------------
-
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -1601,7 +1601,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // JAVA BANKING PROGRAM FOR BEGINNERS
+        // JAVA BANKING PROGRAM FOR BEGINNERS 
+         
+        // DECLARE VARIABLES 
+        // DISPLAY MENU 
+        // GET AND PROCESS USERS CHOICE 
+        // showBalance() 
+        // deposit() 
+        // withdraw() 
+        // EXIT MESSAGE
 
         double balance = 0;
         boolean isRunning = true;
@@ -1675,3 +1683,89 @@ public class Main {
         }
     }
 }
+*/
+//-------------------------
+/*
+public class Main{
+    public static void main(String[] args){
+
+        int[] arr = {1, 2, 3 ,4};
+
+        int sum = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            
+            sum += arr[i];
+        }
+        System.out.println(sum);
+    }
+}
+*/
+/*
+public class Main{
+    public static void main(String[] args){
+
+        int[] arr = {1, 2, 3, 4};
+
+        int max = arr[0];
+
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+*/
+/*
+// Aşağıdaki array’de kaç tane çift sayı var, bulan kodu yaz:
+//int[] arr = {3, 6, 1, 8, 9, 2};
+//İpucu:
+//Bir sayaç (count) oluştur.
+//arr[i] % 2 == 0 kontrolü yap.
+//Yaz ve gönder.
+
+public class Main{
+    public static void main(String[] args){
+
+        int[] arr = {3, 6, 1, 8, 9, 2};
+
+        int count = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] % 2 == 0){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+*/
+//En küçük sayıyı ve en büyük sayıyı aynı anda bulan kodu yaz.
+//int[] arr = {5, 2, 8, 1, 9};
+//İpucu:
+//int min = arr[0];
+//int max = arr[0];
+//Tek loop içinde ikisini de güncelle.
+
+public class Main{
+    public static void main(String[] args){
+        
+        int[] arr = {5, 2, 8, 1, 9};
+
+        int min = arr[0];
+        int max = arr[0];
+
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+            else if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        System.out.println(max);
+        System.out.println(min);
+    }
+} 

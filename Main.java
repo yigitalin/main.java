@@ -1684,88 +1684,181 @@ public class Main {
     }
 }
 */
-//-------------------------
+//----------------------------------------------------------------------------------------------------------
 /*
+import java.util.Scanner;
+import java.util.Random;
+
 public class Main{
     public static void main(String[] args){
 
-        int[] arr = {1, 2, 3 ,4};
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-        int sum = 0;
+        int numOfDice;
+        int total = 0;
 
-        for(int i = 0; i < arr.length; i++){
+        System.out.print("Enter the # of dice to roll: ");
+        numOfDice = scanner.nextInt();
+
+        if(numOfDice > 0){
             
-            sum += arr[i];
-        }
-        System.out.println(sum);
-    }
-}
-*/
-/*
-public class Main{
-    public static void main(String[] args){
-
-        int[] arr = {1, 2, 3, 4};
-
-        int max = arr[0];
-
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
+            for(int i = 0; i < numOfDice; i++){
+                int roll = random.nextInt(1, 7);
+                printDie(roll);
+                System.out.println("You rolled: " + roll);
+                total += roll;
             }
+            System.out.println("Total: " + total);
         }
-        System.out.println(max);
+        else{
+            System.out.println("# of dice must be greater than 0.");
+        }
+        scanner.close();
+    }
+    static void printDie(int roll){
+
+        String dice1 = """
+                 -------
+                |       |
+                |   ●   |
+                |       |
+                 -------
+                """;
+        String dice2 = """
+                 -------
+                | ●     |
+                |       |
+                |     ● |
+                 -------
+                """;
+        String dice3 = """
+                 -------
+                | ●     |
+                |   ●   |
+                |     ● |
+                 -------
+                """;
+        String dice4 = """
+                 -------
+                | ●   ● |
+                |       |
+                | ●   ● |
+                 -------
+                """;
+        String dice5 = """
+                 -------
+                | ●   ● |
+                |   ●   |
+                | ●   ● |
+                 -------
+                """;
+        String dice6 = """
+                 -------
+                | ●   ● |
+                | ●   ● |
+                | ●   ● |
+                 -------
+                """;
+
+        switch(roll){
+            case 1 -> System.out.println(dice1);
+            case 2 -> System.out.println(dice2);
+            case 3 -> System.out.println(dice3);
+            case 4 -> System.out.println(dice4);
+            case 5 -> System.out.println(dice5);
+            case 6 -> System.out.println(dice6);
+            default -> System.out.println("Invalid roll!");
+        }
     }
 }
 */
-/*
-// Aşağıdaki array’de kaç tane çift sayı var, bulan kodu yaz:
-//int[] arr = {3, 6, 1, 8, 9, 2};
-//İpucu:
-//Bir sayaç (count) oluştur.
-//arr[i] % 2 == 0 kontrolü yap.
-//Yaz ve gönder.
+//--------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+import java.util.Random;
+
 
 public class Main{
     public static void main(String[] args){
 
-        int[] arr = {3, 6, 1, 8, 9, 2};
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-        int count = 0;
+        int numOfDice;
+        int total = 0;
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] % 2 == 0){
-                count++;
+        System.out.print("Enter the # of dice to roll: ");
+        numOfDice = scanner.nextInt();
+
+        if(numOfDice > 0){
+
+            for(int i = 0; i < numOfDice; i++){
+                int roll = random.nextInt(1,7);
+                printDie(roll);
+                System.out.println("You rolled: " + roll);
+                total += roll;
             }
+            System.out.println("Total: " + total);
         }
-        System.out.println(count);
+        else{
+            System.out.println("# of dice must be greater than 0.");
+        }
     }
-}
-*/
-//En küçük sayıyı ve en büyük sayıyı aynı anda bulan kodu yaz.
-//int[] arr = {5, 2, 8, 1, 9};
-//İpucu:
-//int min = arr[0];
-//int max = arr[0];
-//Tek loop içinde ikisini de güncelle.
-
-public class Main{
-    public static void main(String[] args){
+    static void printDie(int roll){
         
-        int[] arr = {5, 2, 8, 1, 9};
+        String dice1 = """
+                 -------
+                |       |
+                |   ●   |
+                |       |
+                 -------
+                """;
+        String dice2 = """
+                 -------
+                | ●     |
+                |       |
+                |     ● |
+                 -------
+                """;
+        String dice3 = """
+                 -------
+                | ●     |
+                |   ●   |
+                |     ● |
+                 -------
+                """;
+        String dice4 = """
+                 -------
+                | ●   ● |
+                |       |
+                | ●   ● |
+                 -------
+                """;
+        String dice5 = """
+                 -------
+                | ●   ● |
+                |   ●   |
+                | ●   ● |
+                 -------
+                """;
+        String dice6 = """
+                 -------
+                | ●   ● |
+                | ●   ● |
+                | ●   ● |
+                 -------
+                """;
 
-        int min = arr[0];
-        int max = arr[0];
-
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
-            }
-            else if(arr[i] < min){
-                min = arr[i];
-            }
+        switch(roll){
+            case 1 -> System.out.println(dice1);
+            case 2 -> System.out.println(dice2);
+            case 3 -> System.out.println(dice3);
+            case 4 -> System.out.println(dice4);
+            case 5 -> System.out.println(dice5);
+            case 6 -> System.out.println(dice6);
+            default -> System.out.println("Invalid roll!");
         }
-        System.out.println(max);
-        System.out.println(min);
     }
-} 
+}
+
+
